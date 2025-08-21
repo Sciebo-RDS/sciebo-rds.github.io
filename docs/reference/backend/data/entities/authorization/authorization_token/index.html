@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">data.entities.authorization.authorization_token | RDS-NG Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rds-ng.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rds-ng.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rds-ng.github.io/docs/reference/backend/data/entities/authorization/authorization_token"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="data.entities.authorization.authorization_token | RDS-NG Documentation"><meta data-rh="true" name="description" content="AuthorizationToken Objects"><meta data-rh="true" property="og:description" content="AuthorizationToken Objects"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://rds-ng.github.io/docs/reference/backend/data/entities/authorization/authorization_token"><link data-rh="true" rel="alternate" href="https://rds-ng.github.io/docs/reference/backend/data/entities/authorization/authorization_token" hreflang="en"><link data-rh="true" rel="alternate" href="https://rds-ng.github.io/docs/reference/backend/data/entities/authorization/authorization_token" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"authorization_token","item":"https://rds-ng.github.io/docs/reference/backend/data/entities/authorization/authorization_token"}]}</script><link rel="stylesheet" href="/assets/css/styles.c34ac821.css">
-<script src="/assets/js/runtime~main.bda51e84.js" defer="defer"></script>
-<script src="/assets/js/main.ca957a03.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fa721f24.js" defer="defer"></script>
+<script src="/assets/js/main.33c2237b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -20,14 +20,15 @@
 <li><code>auth_id</code> - The ID of this token.</li>
 <li><code>auth_type</code> - The token type.</li>
 <li><code>auth_issuer</code> - The entity that requires the authorization.</li>
+<li><code>auth_issuer_url</code> - The URL of the entity that requires the authorization.</li>
 <li><code>auth_bearer</code> - The bearer that will be authorized against.</li>
 <li><code>state</code> - The state of the token.</li>
 <li><code>timestamp</code> - The timestamp of the token.</li>
 <li><code>expiration_timestamp</code> - Timestamp when the token becomes invalid; a value of 0 means that the token never becomes invalid.</li>
 <li><code>refresh_attempts</code> - The number of refresh attempts.</li>
-<li><code>strategy</code> - The token strategy (e.g., OAuth2).</li>
-<li><code>auth_id</code>0 - The actual token data.</li>
-<li><code>auth_id</code>1 - Arbitrary strategy data (usually configuration).</li>
+<li><code>auth_id</code>0 - The token strategy (e.g., OAuth2).</li>
+<li><code>auth_id</code>1 - The actual token data.</li>
+<li><code>auth_id</code>2 - Arbitrary strategy data (usually configuration).</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="tokentype-objects">TokenType Objects<a href="#tokentype-objects" class="hash-link" aria-label="Direct link to TokenType Objects" title="Direct link to TokenType Objects">​</a></h2>
 <div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">class</span><span class="token plain"> </span><span class="token class-name">TokenType</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">StrEnum</span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre></div></div>
